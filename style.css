@@ -1,12 +1,10 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
-  
-  /* Body styling with smooth gradient */
+
   body {
     background: linear-gradient(135deg, #a6c0fe 0%, #f68084 100%);
     font-family: 'Poppins', sans-serif;
@@ -18,8 +16,7 @@
     height: 100vh;
     overflow: hidden;
   }
-  
-  /* Container Styling */
+
   .container {
     width: 90%;
     max-width: 900px;
@@ -36,8 +33,7 @@
   .container:hover {
     transform: translateY(0);
   }
-  
-  /* Header Styling */
+
   header {
     margin-bottom: 40px;
   }
@@ -55,8 +51,7 @@
     font-size: 1.2rem;
     color: #555;
   }
-  
-  /* Language Section Styling */
+
   .language-toggle {
     margin-bottom: 30px;
   }
@@ -85,8 +80,7 @@
     border-color: #3f51b5;
     background-color: #e8f0fe;
   }
-  
-  /* Dropdown for Indian and Foreign languages */
+
   .language-section select {
     padding: 12px 20px;
     font-size: 1.1rem;
@@ -103,8 +97,7 @@
     border-color: #3f51b5;
     background-color: #e8f0fe;
   }
-  
-  /* Button Styling with hover & active states */
+
   button {
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -130,8 +123,7 @@
   button:focus {
     outline: none;
   }
-  
-  /* Status and Result Textbox */
+
   #status {
     font-size: 1.2rem;
     color: #888;
@@ -156,8 +148,7 @@
   #result:hover {
     background-color: #e8f0fe;
   }
-  
-  /* Footer Section */
+
   footer {
     text-align: center;
     margin-top: 40px;
@@ -166,8 +157,7 @@
     padding-top: 20px;
     border-top: 1px solid #ddd;
   }
-  
-  /* Smooth Animation for Text */
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -182,8 +172,7 @@
   #result {
     animation: fadeIn 0.8s ease-in-out;
   }
-  
-  /* Mobile Responsiveness */
+
   @media (max-width: 600px) {
     .container {
       width: 100%;
