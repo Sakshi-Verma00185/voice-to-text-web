@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech to Text Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Speech to Text Converter</h1>
+      <p>Click the button and start speaking. Your voice will be converted to text.</p>
+    </header>
+
+    <main>
+      <!-- Language Section Toggle -->
+      <div class="language-toggle">
+        <label for="language-toggle">Choose Language Section: </label>
+        <select id="language-toggle">
+          <option value="indian">Indian Languages</option>
+          <option value="foreign">Foreign Languages</option>
+        </select>
+      </div>
+
+      <!-- Indian Languages Section -->
+      <div id="indian-section" class="language-section">
+        <label for="indian-languages">Choose Indian Language: </label>
+        <select id="indian-languages">
+          <option value="hi-IN">Hindi</option>
+          <option value="bn-IN">Bengali</option>
+          <option value="ta-IN">Tamil</option>
+          <option value="te-IN">Telugu</option>
+          <option value="mr-IN">Marathi</option>
+          <option value="gu-IN">Gujarati</option>
+          <option value="kn-IN">Kannada</option>
+          <option value="ml-IN">Malayalam</option>
+          <option value="pa-IN">Punjabi</option>
+        </select>
+      </div>
+
+      <!-- Foreign Languages Section -->
+      <div id="foreign-section" class="language-section" style="display:none;">
+        <label for="foreign-languages">Choose Foreign Language: </label>
+        <select id="foreign-languages">
+          <option value="en-US">English (US)</option>
+          <option value="es-ES">Spanish</option>
+          <option value="fr-FR">French</option>
+          <option value="de-DE">German</option>
+          <option value="it-IT">Italian</option>
+          <option value="ja-JP">Japanese</option>
+          <option value="zh-CN">Chinese (Simplified)</option>
+        </select>
+      </div>
+
+      <button id="start-btn" onclick="toggleRecognition()">🎤 Start Listening</button>
+      <button id="refresh-btn" onclick="refreshText()">🔄 Refresh</button>
+      <p id="status">Press the button and start speaking...</p>
+      <div id="text-output">
+        <p id="result"></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Speech to Text App | Built with Web Speech API |  Created by Sakshi Verma</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
